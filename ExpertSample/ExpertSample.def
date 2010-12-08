@@ -1,0 +1,10 @@
+LIBRARY ExpertSample
+
+EXPORTS GetIntValue
+        GetDoubleValue
+        GetStringValue
+        GetArrayItemValue
+        SetArrayItemValue
+        GetRatesItemValue
+        SortStringArray
+        ProcessStringArray
