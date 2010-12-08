@@ -1,0 +1,7 @@
+#include "../gsodbc_src/source/stdhead.h"
+#include "../gsodbc_src/source/connect.h"
+#include "../gsodbc_src/source/stmt.h"
+#include "../gsodbc_src/source/excpt.h"
+#include "../gsodbc_src/source/cur.h"
+#include "../gsodbc_src/source/curex.h"
+#include "../gsodbc_src/source/curidx.h"

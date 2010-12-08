@@ -69,6 +69,7 @@
     <ClCompile Include="..\gsodbc_src\source\excpt.cpp" />
     <ClCompile Include="..\gsodbc_src\source\stmt.cpp" />
     <ClCompile Include="MT4ODBCBridge.cpp" />
+    <ClCompile Include="ODBCWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MT4ODBCBridge.def" />
@@ -82,6 +83,8 @@
     <ClInclude Include="..\gsodbc_src\source\gsodbc.h" />
     <ClInclude Include="..\gsodbc_src\source\stdhead.h" />
     <ClInclude Include="..\gsodbc_src\source\stmt.h" />
+    <ClInclude Include="MT4ODBCBridge.h" />
+    <ClInclude Include="ODBCWrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

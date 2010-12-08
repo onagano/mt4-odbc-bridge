@@ -11,9 +11,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_demo", "gsodbc_demo\
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MT4ODBCBridge", "MT4ODBCBridge\MT4ODBCBridge.vcxproj", "{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}"
-	ProjectSection(ProjectDependencies) = postProject
-		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46} = {8CAEF47F-1CBD-4909-A16B-9182A5D66A46}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
