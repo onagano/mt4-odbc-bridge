@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExpertSample", "ExpertSampl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_src", "gsodbc_src\gsodbc_src.vcxproj", "{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_demo", "gsodbc_demo\gsodbc_demo.vcxproj", "{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}.Debug|Win32.Build.0 = Debug|Win32
 		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}.Release|Win32.ActiveCfg = Release|Win32
 		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}.Release|Win32.Build.0 = Release|Win32
+		{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}.Debug|Win32.Build.0 = Debug|Win32
+		{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}.Release|Win32.ActiveCfg = Release|Win32
+		{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
