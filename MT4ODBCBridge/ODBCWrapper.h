@@ -1,6 +1,7 @@
 #ifndef gsodbcexp
 #include "MT4ODBCBridge.h"
 #endif
+#include <map>
 
 class ODBCWrapper {
 

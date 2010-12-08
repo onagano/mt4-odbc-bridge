@@ -1,10 +1,10 @@
 #define WIN32_LEAN_AND_MEAN  // Exclude rarely-used stuff from Windows headers
 
-#include "MT4ODBCBridge.h"
+#include <windows.h>
 #include "ODBCWrapper.h"
 
 HINSTANCE g_hInst;
-ODBCWrapper *cCon;
+std::map<const char*, ODBCWrapper*> conns;
 
 #define MT4_EXPFUNC __declspec(dllexport)
 
@@ -23,19 +23,22 @@ BOOL APIENTRY DllMain(HINSTANCE hInst, DWORD ul_reason_for_call, LPVOID lpReserv
 	return(TRUE);
 }
 
-MT4_EXPFUNC void __stdcall MOB_open(const char *dns, const char *username, const char *password)
+MT4_EXPFUNC void __stdcall MOB_create(const char *name)
 {
-	cCon = new ODBCWrapper();
-	cCon->open(dns, username, password);
+	conns[name] = new ODBCWrapper();
 }
 
-MT4_EXPFUNC void __stdcall MOB_close()
+MT4_EXPFUNC void __stdcall MOB_open(const char *name, const char *dns, const char *username, const char *password)
 {
-	cCon->close();
-	delete cCon;
+	conns[name]->open(dns, username, password);
 }
 
-MT4_EXPFUNC void __stdcall MOB_execute(const char *sql)
+MT4_EXPFUNC void __stdcall MOB_close(const char *name)
 {
-	cCon->execute(sql);
+	delete conns[name];
+}
+
+MT4_EXPFUNC void __stdcall MOB_execute(const char *name, const char *sql)
+{
+	conns[name]->execute(sql);
 }

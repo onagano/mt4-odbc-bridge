@@ -1,5 +1,6 @@
 LIBRARY MT4ODBCBridge
 
-EXPORTS MOB_open
+EXPORTS MOB_create
+		MOB_open
 		MOB_close
 		MOB_execute
