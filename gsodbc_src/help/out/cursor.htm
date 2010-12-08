@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>CGCursor</title>
+</head>
+<body>
+<p>Class <b><code>CGCursor</code></b> provides alternative way to
+working with cursors (results of "select" SQL operation). Also, cursor
+class can be used as simple local storage for structured data.</p>
+<p><b>Methods</b></p>
+
+<p><a name=CGCursor>
+<code><font color=blue><b>CGCursor</b>(CGOdbcStmt *pStmt, const char *szFileName = 0);</code></font><br>
+<code><font color=blue><b>CGCursor</b>(const char *szFileName);</code></font><br>
+<code><font color=blue><b>CGCursor</b>(int iColumns, CGCursor::COLUMN *pColumns, const char *szFileName = 0);</code></font><br>
+Constructor creates and initializes cursor object. First variant creates cursor from results
+of <a href=stmt.htm>odbc statement</a>. Second variant opens previously opened
+cursor file and last variant creates new unattended cursor.<br>
+Parameters
+<table width=100%>
+<tr><td valign=top><code>pStmt</td><td>Reference to ODBC statement.</td></tr>
+<tr><td valign=top><code>szFileName</td><td>Name of the file to create cursor. If file name is omitted, temporary file will be created.</td></tr>
+<tr><td valign=top><code>iColumns</td><td>Number of columns</td></tr>
+<tr><td valign=top><code>pColumns</td><td>Column's descriptions</td></tr>
+</table>
+Constructor can throw <a href=excpt.htm>odbc exception</a> or <a href=cursorex.htm>cursor exception</a>. </p>
+
+<p><a name=go><code><font color=blue>void <b>go</b>(int iRow);</code></font><br>
+Method loads specified row into internal row buffer. You can access to this buffer
+with help of get*/set* methods. Index for row should be greater than zero.
+The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=getRowCount><code><font color=blue>int <b>getRowCount</b>();</code></font><br>
+Method returns number of rows in cursor object. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=getRowNo><code><font color=blue>int <b>getRowNo</b>();</code></font><br>
+Method return index of current row. If index is less than 1, then:
+<li>or cursor doesn't contain rows;
+<li>or cursor is append mode;</p>
+
+<p><a name=getColCount><code><font color=blue>int <b>getColCount</b>();</code></font><br>
+Method return number of columns.</p>
+
+<p><a name=getColumn><code><font color=blue>const <a href=column1.htm>CGCursor::COLUMN</a> *<b>getColumn</b>(int iColumn);</code></font><br>
+Method returns column description by index of column. Index of column should be zero or greater. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=getInt><code><font color=blue>int <b>getInt</b>(int iColumn);<br>
+int <b>getInt</b>(const char *szName);</code></font><br>
+Method return integer value of column. This method can be for integer, double and character columns.
+The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=getChar><code><font color=blue>const char *<b>getChar</b>(int iColumn);<br>
+const char *<b>getChar</b>(const char *szName);</code></font><br>
+Method returns textual presentation of the field. Method can be used for all
+kinds of columns except binaries and blobs. Note that for all datatypes except
+string, returned buffer is actual only to next call of this method. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=getNumber><code><font color=blue>double <b>getNumber</b>(int iColumn);<br>
+double <b>getNumber</b>(const char *szName);</code></font><br>
+Method return double value of column. This method can be for integer, double and character columns.
+The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+
+<p><a name=getDate><code><font color=blue>const <a href=datatype.htm>CGOdbcStmt::DATE</a> *<b>getDate</b>(int iColumn);<br>
+const <a href=datatype.htm>CGOdbcStmt::DATE</a> *<b>getDate</b>(const char *szName);</code></font><br>
+Method return date value of column. This method can used only for date and timestamp columns.
+The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=getTimeStamp><code><font color=blue>const <a href=datatype.htm>CGOdbcStmt::TIMESTAMP</a> *<b>getTimeStamp</b>(int iColumn); <br>
+const <a href=datatype.htm>CGOdbcStmt::TIMESTAMP</a> *<b>getTimeStamp</b>(const char *szName);</code></font><br>
+Method return date and time value of column. This method can used only timestamp columns.
+The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=getPtr><code><font color=blue>const void *<b>getPtr</b>(int iColumn);<br>
+const void *<b>getPtr</b>(const char *szName);</code></font><br>
+Method return pointer value of column.
+The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+
+<p><a name=getLength><code><font color=blue>int <b>getLength</b>(int iColumn);<br>
+int <b>getLength</b>(const char *szName);</code></font><br>
+Method returns length in bytes of the value of column.
+The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+
+<p><a name=getGUID><code><font color=blue>const GUID * <b>getGUID</b>(int iColumn);<br>
+const <b>GUID * getGUID</b>(const char *szName);</code></font><br>
+Method returns GUID value of the column. This method can be used only
+to GUID columns. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=isNull><code><font color=blue>bool <b>isNull</b>(int iColumn);<br>
+bool <b>isNull</b>(const char *szName);</code></font><br>
+The method returns true if columns has <code>null</code> value.
+All other get* method except <a href=#getChar><code>getChar</code></a> shouldn't
+be used when column has <code>null</code> value. The method can throw <a href=cursorex.htm>cursor exception</a>.
+
+<p><a name=deleteRow><code><font color=blue>void <b>deleteRow</b>();</code></font><br>
+The method marks current row as "deleted". The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=isDeleted><code><font color=blue>bool <b>isDeleted</b>();</code></font><br>
+The method returns true if current row is marked as "deleted". The method can throw <a href=cursorex.htm>cursor exception</a>.</p> </p>
+
+<p><a name=update><code><font color=blue>void <b>update</b>();</code></font><br>
+The method writes changes in current row to cursor file.</p>
+
+<p><a name=append><code><font color=blue>void <b>append</b>();</code></font><br>
+The method assigns <code>null</code> value for all columns in current buffer
+and switches cursor to "new row" mode. New row will not be visible by all
+other methods until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=setInt>
+<code><font color=blue>void <b>setInt</b>(int iColumn, int iVal);<br>
+void <b>setInt</b>(const char *szName, int iVal);</code></font><br>
+Method sets new value for numeric columns.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=setChar>
+<code><font color=blue>void <b>setChar</b>(int iColumn, const char *);<br>
+void <b>setChar</b>(const char *szName, const char *);</code></font><br>
+Method sets new value for character or CLOB columns.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+
+<p><a name=setNumber>
+<code><font color=blue>void <b>setNumber</b>(int iColumn, double dblVal);<br>
+void <b>setNumber</b>(const char *szName, double dblVal);</code></font><br>
+Method sets new value for numeric columns.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=setDate>
+<code><font color=blue>void <b>setDate</b>(int iColumn, const CGOdbcStmt::DATE *);<br>
+void <b>setDate</b>(const char *szName, const CGOdbcStmt::DATE *);</code></font><br>
+Method sets new value to date or timestamp columns.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=setTimeStamp>
+<code><font color=blue>void <b>setTimeStamp</b>(int iColumn, const CGOdbcStmt::TIMESTAMP *);<br>
+void <b>setTimeStamp</b>(const char *szName, const CGOdbcStmt::TIMESTAMP *);</code></font><br>
+Method sets new value to date or timestamp columns.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=setBin>
+<code><font color=blue>void <b>setBin</b>(int iColumn, const void *, int);<br>
+void <b>setBin</b>(const char *szName, const void *, int);</code></font><br>
+Method sets new value for binary and blob fields.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p></p>
+
+<p><a name=setGUID>
+<code><font color=blue>void <b>setGUID</b>(int iColumn, const GUID * );   <br>
+void <b>setGUID</b>(const char *szName, const GUID * );</code></font><br>
+Method sets new value for GUID columns.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p>
+
+<p><a name=setNull>
+<code><font color=blue>void <b>setNull</b>(int iColumn);<br>
+void <b>setNull</b>(const char *szName);</code></font><br>
+Method sets null value to specified column.
+Data will not be stored in cursor file until <a href=#update><code>update</code></a> call. The method can throw <a href=cursorex.htm>cursor exception</a>.</p> </p>
+
+</body>
+</html>

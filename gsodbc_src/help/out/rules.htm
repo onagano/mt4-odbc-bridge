@@ -1,0 +1,44 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+Datatype conversion rules:
+<table width=100% border=1>
+<tr><td><b>SQL type</td><td><b>SQL/C type</td><td><b>C/C++ type</td><td width="50%"><b>Comments</td></tr>
+<tr><td valign=top><code>SQL_BIT<br>SQL_TINYINT<br>SQL_SMALLINT<br>SQL_INTEGER<br> </td>
+    <td valign=top><code>SQL_C_LONG</td>
+    <td valign=top><code>long</td>
+    <td valign=top>&nbsp;</td></tr>
+<tr><td valign=top><code>SQL_DOUBLE<br>SQL_FLOAT<br>SQL_NUMERIC<br>SQL_DECIMAL<br>SQL_REAL<br> </td>
+    <td valign=top><code>SQL_C_DOUBLE</td>
+    <td valign=top><code>double</td>
+    <td valign=top><code>iPrec</code> field of the column of parameter describes number of digits after decimal point.</td></tr>
+<tr><td valign=top><code>SQL_DATE<br>SQL_TYPE_DATE</td>
+    <td valign=top><code>SQL_C_DATE</td>
+    <td valign=top><code><a href=datatype.htm>CGOdbcStmt::<br>DATE</a></td>
+    <td valign=top>Parameter can require to specify 23 as SQL size and 3 as precision.</td></tr>
+<tr><td valign=top><code>SQL_TIMESTAMP<br>SQL_TYPE_TIMESTAMP</td>
+    <td valign=top><code>SQL_C_TIMESTAMP</td>
+    <td valign=top><code><a href=datatype.htm>CGOdbcStmt::<br>TIMESTAMP</a></td>
+    <td valign=top>Parameter can require to specify 23 as SQL size and 3 as precision.</td></tr>
+<tr><td valign=top><code>SQL_CHAR<br>SQL_VARCHAR</td>
+    <td valign=top><code>SQL_C_CHAR</td>
+    <td valign=top><code>char[n + 1]</td>
+    <td valign=top>Size of the buffer should be greater than size of field to store zero-terminator.</td></tr>
+<tr><td valign=top><code>SQL_LONGVARCHAR</td>
+    <td valign=top><code>SQL_C_CHAR</td>
+    <td valign=top><code>char *</td>
+    <td valign=top>LOB datatype. Cursor doesn't load/send values of LOB fields or parameter while these data are not requested.
+MSSQL and Oracle doesn't require specification of size or sql size in parameters, but for
+Visual FoxPro driver maximum number of characters in CLOB fields should be specified during binding.</td></tr>
+<tr><td valign=top><code>SQL_BINARY<br>SQL_VARBINARY</td>
+    <td valign=top><code>SQL_C_BINARY</td>
+    <td valign=top><code>unsigned char[n]</td>
+    <td valign=top>&nbsp;</td></tr>
+<tr><td valign=top><code>SQL_LONGVARBINARY</td>
+    <td valign=top><code>SQL_C_BINARY</td>
+    <td valign=top><code>unsigned char *<br>void *</td>
+    <td valign=top>LOB datatype. Cursor doesn't load/send values of LOB fields or parameter while these data are not requested.</td></tr>
+</body>
+</html>

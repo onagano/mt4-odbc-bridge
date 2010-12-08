@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>CGOdbcConnection</title>
+</head>
+<body>
+<p>Goal of class <code><b>CGOdbcConnection</b></code> is work around HDBC connection handle.
+Also, this class is responsible to create statement objects.</p>
+<p>Methods</p>
+<a name=connect_connect><p><code><font color=blue>void <b>connect</b>(const char *szDSN, const char *szUID, const char *szPWD);</font></code><br>
+Method is responsible for establishing of connection with specified datasource.<br>
+<table width=100% border=0>
+<tr><td width=15% valign=top><code>szDSN</td><td width=5%><td>Name of ODBC datasource name</td>
+<tr><td width=15% valign=top><code>szUID</td><td width=5%><td>User name for login</td>
+<tr><td width=15% valign=top><code>szPWD</td><td width=5%><td>Password for login</td>
+</table>Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<p><code><font color=blue>void <b>connect</b>(const char *szString, HWND hWnd = 0);</font></code><br>
+Method is responsible for establishing of connection with help of connection string (see description of ODBC's SQLDriverConnect function for details)<br>
+<table width=100% border=0>
+<tr><td width=15% valign=top><code>szString</td><td width=5%><td>Connection string</td>
+<tr><td width=15% valign=top><code>hWnd</td><td width=5%><td>Optional windows handle, which can be used to show login dialog</td>
+</table>Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<a name=connect_createStatement><p><code><font color=blue>CGOdbcStmt *<b>createStatement</b>();</font></code><br>
+Method creates <a href=stmt.htm>statement</a>.</p>
+
+<a name=connect_freeStatement><p><code><font color=blue>void <b>freeStatement</b>(CGOdbcStmt *);</font></code><br>
+Method deletes <a href=stmt.htm>statement</a>.</p>
+
+<a name=connect_executeSelect><p><code><font color=blue>CGOdbcStmt *<b>executeSelect</b>(const char *szSQL);</font></code><br>
+Method executes "select" query on current connection and return statement with
+result cursor. Method can return <code>null</code> if result doesn't contain columns. Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<a name=connect_executeUpdate><p><code><font color=blue>int <b>executeUpdate</b>(const char *szSQL); </font></code><br>
+Method executes non-"select" query on current connection and return number of affecter rows.
+Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+</p>
+
+<a name=connect_getListOfTypes><p><code><font color=blue>CGOdbcStmt *<b>getListOfTypes</b>();</font></code><br>
+<p>Method selects list of datatypes and returns it as cursor. Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<a name=connect_getListOfTables><p><code><font color=blue>CGOdbcStmt *<b>getListOfTables</b>(const char *szTableMask = 0);</font></code><br>
+<p>Method selects list of table (all or by like mask) and returns it as cursor. Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<a name=connect_getListOfColumns><p><code><font color=blue>CGOdbcStmt *<b>getListOfColumns</b>(const char *szTableMask = 0);</font></code><br>
+<p>Method selects list of columns (all or by table name or by like mask for table name) and returns it as cursor. Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<a name=connect_setTransMode><p><code><font color=blue>void <b>setTransMode</b>(bool bAutoCommit); </font></code><br>
+Method switched transaction mode for current connection to manual or auto-commit mode. Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<a name=connect_commit><p><code><font color=blue>void <b>commit</b>(); </font></code><br>
+Method commits transaction in manual mode. Method can throw <a href=excpt.htm>CGOdbcEx</a> exception. </p>
+
+<a name=connect_rollback><p><code><font color=blue>void <b>rollback</b>(); </font></code><br>
+Method rollbacks transaction in manual mode. Method can throw <a href=excpt.htm>CGOdbcEx</a> exception.</p>
+
+<a name=connect_getDriver><p><code><font color=blue>const char *<b>getDriver</b>();</font></code><br>
+Method returns file name (without path) of the driver, used in established connection.</p>
+
+<a name=connect_close><p><code><font color=blue>void <b>close</b>();</font></code><br>
+Method closes connection.</p>
+
+<a name=connect_getConnect><p><code><font color=blue>HDBC <b>getConnect</b>();</font></code><br>
+Method returns ODBC connection handle.</p>
+
+<a name=connect_setConnect><p><code><font color=blue>void <b>setConnect</b>(HDBC);</font></code><br>
+Method set external ODBC connection handle. This connection will not be
+freed during <code>close</code> operation.</p>
+
+<a name=connect_firstDSN><p><code><font color=blue>bool <b>firstDSN</b>(char *szBuff, int lBuffMaxLen);</code></font><br>
+<code><font color=blue>bool <b>nextDSN</b>(char *szBuff, int lBuffMaxLen);</code></font><br>
+Pair of the functions, which is used to enumerate list of all available DSN. Function return <code>true</code> if DSN is successfully obtained.</p>
+
+<p>&nbsp;<p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp; <p>&nbsp;
+</body>
+</html>

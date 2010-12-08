@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="COLUMN (statement)">
+                <param name="Name" value="Column description">
+                <param name="Local" value="out\column.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="COLUMN (cursor)">
+                <param name="Name" value="Column description">
+                <param name="Local" value="out\column1.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="TIMESTAMP">
+                <param name="Name" value="Date and datetime datatypes">
+                <param name="Local" value="out\datatype.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="DATE">
+                <param name="Name" value="Date and datetime datatypes">
+                <param name="Local" value="out\datatype.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGOdbcEx">
+                <param name="Name" value="CGOdbcEx">
+                <param name="Local" value="out\excpt.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGCursorEx">
+                <param name="Name" value="CGCursorEx">
+                <param name="Local" value="out\cursorex.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGCursor">
+                <param name="Name" value="CGCursor">
+                <param name="Local" value="out\cursor.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGCursorIndex">
+                <param name="Name" value="CGCursorIndex">
+                <param name="Local" value="out\curindex.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGOdbcStmt">
+                <param name="Name" value="CGOdbcStmt">
+                <param name="Local" value="out\stmt.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGOdbcConnection">
+                <param name="Name" value="CGOdbcConnection">
+                <param name="Local" value="out\connection.htm">
+                </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="connect">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_connect"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="createStatement">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_createStatement"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="freeStatement">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_freeStatement"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="executeSelect">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_executeSelect"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="executeUpdate">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_executeUpdate"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getListOfTypes">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_getListOfTypes"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getListOfTables">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_getListOfTables"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getListOfColumns">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_getListOfColumns"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setTransMode">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_setTransMode"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="commit">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_commit"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="rollback">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_rollback"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getDriver">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_getDriver"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="close">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_close"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getConnect">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_getConnect"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setConnect">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_setConnect"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="firstDSN">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_firstDSN"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="nextDSN">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_firstDSN"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="execute (connection)">
+                <param name="Name" value="Connection">
+                <param name="Local" value="out\connection.htm#connect_executeSelect"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="execute (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#execute"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="prepare">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#prepare"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setTimeOut">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setTimeOut"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="toNative">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#toNative"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="moreResults">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#moreResults"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getRowCount">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getRowCount"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="bindAuto">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#bindAuto"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="bindParamsAuto">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#bindParamsAuto"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setParamNumber">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setParamNumber"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="bindParam">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#bindParam"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="cancel">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#cancel"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="first">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#first"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="last">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#last"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="next">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#next"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="prev">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#prev"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="go (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#go"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="skip">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#skip"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getRowNo (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getRowNo"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getColCount (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getColCount"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="findColumn (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#findColumn"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getColumn (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getColumn"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getInt (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getInt"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getChar (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getChar"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getLength (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getLength"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getPtr (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getPtr"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="isNull (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#isNull"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getNumber (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getNumber"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getDate (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getDate"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getTimeStamp (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getTimeStamp"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getGUID (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getGUID"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setInt (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setInt"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setChar (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setChar"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setBin (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setBin"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setNumber (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setNumber"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setDate (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setDate"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setTimeStamp (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setTimeStamp"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setGUID (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setGUID"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setNull (statement)">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#setNull"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getStmt">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getStmt"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getStmt">
+                <param name="Name" value="Statement">
+                <param name="Local" value="out\stmt.htm#getStmt"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGCursorIndex (constructor)">
+                <param name="Name" value="Cursor index">
+                <param name="Local" value="out\curindex.htm#CGCursorIndex"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="save">
+                <param name="Name" value="Cursor index">
+                <param name="Local" value="out\curindex.htm#save"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="go (cursor index)">
+                <param name="Name" value="Cursor index">
+                <param name="Local" value="out\curindex.htm#go"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="seekForAbsRow">
+                <param name="Name" value="Cursor index">
+                <param name="Local" value="out\curindex.htm#seekForAbsRow"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="seekFor">
+                <param name="Name" value="Cursor index">
+                <param name="Local" value="out\curindex.htm#seekFor"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="CGCursor (constructor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#CGCursor"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="go (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#go"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getRowCount (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getRowCount"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getRowNo (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getRowNo"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getColCount (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getColCount"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getColumn (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getColumn"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getInt (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getInt"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getChar (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getChar"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getNumber (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getNumber"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getDate (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getDate"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getTimeStamp (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getTimeStamp"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getPtr (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getPtr"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getLength (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getLength"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="getGUID (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#getGUID"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="isNull (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#isNull"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="deleteRow">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#deleteRow"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="isDeleted">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#isDeleted"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="update">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#update"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="append">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#append"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setInt (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setInt"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setChar (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setChar"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setNumber (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setNumber"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setDate (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setDate"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setTimeStamp (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setTimeStamp"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setBin (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setBin"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setGUID (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setGUID"></OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="setNull (cursor)">
+                <param name="Name" value="Cursor">
+                <param name="Local" value="out\cursor.htm#setNull"></OBJECT>
+</UL>
+</BODY></HTML>

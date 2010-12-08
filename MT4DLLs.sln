@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C++ Express 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExpertSample", "ExpertSample\ExpertSample.vcxproj", "{376917B0-A5D5-47C8-A8F2-6506420E862E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_src", "gsodbc_src\gsodbc_src.vcxproj", "{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{376917B0-A5D5-47C8-A8F2-6506420E862E}.Debug|Win32.Build.0 = Debug|Win32
 		{376917B0-A5D5-47C8-A8F2-6506420E862E}.Release|Win32.ActiveCfg = Release|Win32
 		{376917B0-A5D5-47C8-A8F2-6506420E862E}.Release|Win32.Build.0 = Release|Win32
+		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}.Debug|Win32.Build.0 = Debug|Win32
+		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}.Release|Win32.ActiveCfg = Release|Win32
+		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

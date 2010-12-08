@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<table width=100% border=1>
+<p><b><code>CGCursor::COLUMN</code></b></p>
+<p>Column of <a href=cursor.htm>cursor</a></p>
+<tr><td valign=top><b>Field</td><td><b>Description</td></tr>
+<tr><td valign=top><code>char szName[MAX_PATH];</td><td>Column name</td></tr>
+<tr><td valign=top><code>long eType</td><td>Datatype of the column:<br>
+                                            <code>CGCursor::eInt</code><br>
+                                            <code>CGCursor::eChar</code><br>
+                                            <code>CGCursor::eBinary</code><br>
+                                            <code>CGCursor::eDouble</code><br>
+                                            <code>CGCursor::eDate</code><br>
+                                            <code>CGCursor::eTimeStamp</code><br>
+                                            <code>CGCursor::eGUID</code><br>
+                                            <code>CGCursor::eCLOB</code><br>
+                                            <code>CGCursor::eBLOB</code><br></td></tr>
+<tr><td valign=top><code>long lSize</td><td>Size of datatype. (During initialization
+                                            should be specified only for eChar and eBinary datatypes.</td></tr>
+<tr><td valign=top><code>long lPrecision</td><td>Number of digits after decimal point. Is used only for eDouble datatypes.</td></tr>
+</table>
+</body>
+</html>
