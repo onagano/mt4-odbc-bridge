@@ -5,10 +5,11 @@
 
 class ODBCWrapper {
 
+	const char *name;
 	CGOdbcConnect *connection;
 
 public:
-	ODBCWrapper();
+	ODBCWrapper(const char *name);
 	~ODBCWrapper();
 
 	void open(const char *dns, const char *username, const char *password);

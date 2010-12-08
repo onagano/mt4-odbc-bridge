@@ -1,6 +1,5 @@
 #define WIN32_LEAN_AND_MEAN  // Exclude rarely-used stuff from Windows headers
 
-#include <windows.h>
 #include "ODBCWrapper.h"
 
 HINSTANCE g_hInst;
@@ -25,7 +24,8 @@ BOOL APIENTRY DllMain(HINSTANCE hInst, DWORD ul_reason_for_call, LPVOID lpReserv
 
 MT4_EXPFUNC void __stdcall MOB_create(const char *name)
 {
-	conns[name] = new ODBCWrapper();
+	//TODO: check if non-deleted object
+	conns[name] = new ODBCWrapper(name);
 }
 
 MT4_EXPFUNC void __stdcall MOB_open(const char *name, const char *dns, const char *username, const char *password)
@@ -35,7 +35,9 @@ MT4_EXPFUNC void __stdcall MOB_open(const char *name, const char *dns, const cha
 
 MT4_EXPFUNC void __stdcall MOB_close(const char *name)
 {
-	delete conns[name];
+	ODBCWrapper *conn = conns[name];
+	conn->close();
+	delete conn;
 }
 
 MT4_EXPFUNC void __stdcall MOB_execute(const char *name, const char *sql)
