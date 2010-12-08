@@ -1,5 +1,6 @@
 #include "stdhead.h"
 
+void testMYSQL();
 void testMSSQL();
 void testORACLE();
 void testVFP();
@@ -7,6 +8,9 @@ void testIndex();
 
 void main(int argc, char *argv[])
 {
+	testMYSQL();
+	getchar();
+	/*
     if (argc == 1)
     {
         printf("Usage of text:\n");
@@ -33,4 +37,5 @@ void main(int argc, char *argv[])
             testIndex();
         }
     }
+	*/
 }

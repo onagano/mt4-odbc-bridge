@@ -6,6 +6,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_src", "gsodbc_src\gsodbc_src.vcxproj", "{8CAEF47F-1CBD-4909-A16B-9182A5D66A46}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_demo", "gsodbc_demo\gsodbc_demo.vcxproj", "{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46} = {8CAEF47F-1CBD-4909-A16B-9182A5D66A46}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

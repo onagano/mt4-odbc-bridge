@@ -75,6 +75,7 @@
     <ClCompile Include="source\index.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\mssql.cpp" />
+    <ClCompile Include="source\mysql.cpp" />
     <ClCompile Include="source\oracle.cpp" />
     <ClCompile Include="source\vfp.cpp" />
   </ItemGroup>
