@@ -10,6 +10,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_demo", "gsodbc_demo\
 		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46} = {8CAEF47F-1CBD-4909-A16B-9182A5D66A46}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MT4ODBCBridge", "MT4ODBCBridge\MT4ODBCBridge.vcxproj", "{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CAEF47F-1CBD-4909-A16B-9182A5D66A46} = {8CAEF47F-1CBD-4909-A16B-9182A5D66A46}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -28,6 +33,10 @@ Global
 		{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}.Debug|Win32.Build.0 = Debug|Win32
 		{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}.Release|Win32.ActiveCfg = Release|Win32
 		{CFEF8974-0FBF-47DE-BD0A-17E31372BEC5}.Release|Win32.Build.0 = Release|Win32
+		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}.Debug|Win32.Build.0 = Debug|Win32
+		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}.Release|Win32.ActiveCfg = Release|Win32
+		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
