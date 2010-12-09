@@ -7,6 +7,10 @@ class ODBCWrapper {
 
 	int conId;
 	CGOdbcConnect *connection;
+	int errorNo;
+	char *errorMesg;
+
+	void handleException(CGOdbcEx *e);
 
 public:
 	ODBCWrapper(int conId);
@@ -18,6 +22,18 @@ public:
 
 	inline CGOdbcConnect *getConnection() {
 		return connection;
+	};
+
+	inline int getLastErrorNo() {
+		int temp = errorNo;
+		errorNo = 0;
+		return temp;
+	};
+
+	inline char *getLastErrorMesg() {
+		char *temp = errorMesg;
+		errorMesg = "";
+		return temp;
 	};
 
 	void open(const char *dns, const char *username, const char *password);

@@ -47,3 +47,13 @@ MT4_EXPFUNC void __stdcall MOB_execute(int conId, const char *sql)
 {
 	conns[conId]->execute(sql);
 }
+
+MT4_EXPFUNC int __stdcall MOB_getLastErrorNo(int conId)
+{
+	return conns[conId]->getLastErrorNo();
+}
+
+MT4_EXPFUNC char* __stdcall MOB_getLastErrorMesg(int conId)
+{
+	return conns[conId]->getLastErrorMesg();
+}

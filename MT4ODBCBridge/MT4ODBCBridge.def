@@ -4,3 +4,5 @@ EXPORTS MOB_create
 		MOB_open
 		MOB_close
 		MOB_execute
+		MOB_getLastErrorNo
+		MOB_getLastErrorMesg
