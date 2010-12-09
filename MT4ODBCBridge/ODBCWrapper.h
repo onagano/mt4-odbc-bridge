@@ -9,6 +9,8 @@ class ODBCWrapper {
 	CGOdbcConnect *connection;
 	int errorNo;
 	char *errorMesg;
+	int nextStmtId;
+	std::map<int, CGOdbcStmt*> stmts;
 
 	void handleException(CGOdbcEx *e);
 
@@ -40,4 +42,8 @@ public:
 	void close();
 
 	void execute(const char *sql);
+
+	int prepareStatement(const char *sql);
+	int executeWithTickData(int stmtId, int datetime, int millis, double *vals, int size);
+	int executeWithCandleData(int stmtId, int datetime, double *vals, int size);
 };

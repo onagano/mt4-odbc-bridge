@@ -6,3 +6,6 @@ EXPORTS MOB_create
 		MOB_execute
 		MOB_getLastErrorNo
 		MOB_getLastErrorMesg
+		MOB_prepareStatement
+		MOB_executeWithTickData
+		MOB_executeWithCandleData
