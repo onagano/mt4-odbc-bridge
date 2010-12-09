@@ -60,6 +60,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>MT4ODBCBridge.def</ModuleDefinitionFile>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(TargetPath)" "C:\Program Files\ODL MetaTrader 4\experts\libraries"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\gsodbc_src\source\connect.cpp" />
