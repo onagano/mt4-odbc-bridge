@@ -5,6 +5,8 @@ ODBCWrapper::ODBCWrapper(const char *name) {
 }
 
 ODBCWrapper::~ODBCWrapper() {
+	if (connection != NULL)
+		close();
 }
 
 void ODBCWrapper::open(const char *dns, const char *username, const char *password) {
