@@ -49,23 +49,20 @@ int main(int argc, char *argv[])
 	MOB_execute(conId, "create table if not exists ticks ("
 						"time datetime,"
 						"msec int,"
-						"open double,"
-						"high double,"
-						"low double,"
-						"close double,"
-						"vol double"
+						"ask double,"
+						"bid double"
 						")");
 	checkError(conId);
 
-	MOB_execute(conId, "insert into ticks values ('2001-01-01 13:00:01', 333, 110.32, 111.55, 90.90, 101.01, 64)");
+	MOB_execute(conId, "insert into ticks values ('2001-01-01 13:00:01', 333, 110.32, 111.55)");
 	checkError(conId);
 
-	stmtId = MOB_prepareStatement(conId, "insert into ticks values (?, ?, ?, ?, ?, ?, ?)");
+	stmtId = MOB_prepareStatement(conId, "insert into ticks values (?, ?, ?, ?)");
 	checkError(conId);
 
 	time(&t);
-	double vals1[5] = {111.32, 115.55, 70.90, 100.01, 44.24};
-	ret = MOB_executeWithTickData(conId, stmtId, (int) t, 123, vals1, 5);
+	double vals1[2] = {111.32, 115.55};
+	ret = MOB_executeWithTickData(conId, stmtId, (int) t, 123, vals1, 2);
 	checkError(conId);
 
 	MOB_execute(conId, "create table if not exists candles ("
