@@ -5,15 +5,15 @@
 
 class ODBCWrapper {
 
-	const char *name;
+	int conId;
 	CGOdbcConnect *connection;
 
 public:
-	ODBCWrapper(const char *name);
+	ODBCWrapper(int conId);
 	~ODBCWrapper();
 
-	inline const char *getName() {
-		return name;
+	inline int getConnectionId() {
+		return conId;
 	};
 
 	inline CGOdbcConnect *getConnection() {

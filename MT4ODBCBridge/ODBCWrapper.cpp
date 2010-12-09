@@ -1,7 +1,7 @@
 #include "ODBCWrapper.h"
 
-ODBCWrapper::ODBCWrapper(const char *name) {
-	this->name = name;
+ODBCWrapper::ODBCWrapper(int conId) {
+	this->conId = conId;
 }
 
 ODBCWrapper::~ODBCWrapper() {

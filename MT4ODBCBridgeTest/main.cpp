@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 
-void __stdcall MOB_create(const char *name);
-void __stdcall MOB_open(const char *name, const char *dns, const char *username, const char *password);
-void __stdcall MOB_close(const char *name);
-void __stdcall MOB_execute(const char *name, const char *sql);
+int	 __stdcall MOB_create();
+void __stdcall MOB_open(int conId, const char *dns, const char *username, const char *password);
+void __stdcall MOB_close(int conId);
+void __stdcall MOB_execute(int conId, const char *sql);
 
 
 int main(int argc, char *argv[])
@@ -12,11 +12,10 @@ int main(int argc, char *argv[])
 	int ret = 0;
 	printf("MT4-ODBC Bridge Test\n");
 
-	const char *name = "hogeid";
-	MOB_create(name);
-	MOB_open(name, "testmysql", "onagano", "password");
-	MOB_execute(name, "insert into pet (name, owner) values ('aaa', 'hogefoobar')");
-	MOB_close(name);
+	int conId = MOB_create();
+	MOB_open(conId, "testmysql", "onagano", "password");
+	MOB_execute(conId, "insert into pet (name, owner) values ('aaa', 'hogefoobar')");
+	MOB_close(conId);
 
 	getchar();
 	return ret;

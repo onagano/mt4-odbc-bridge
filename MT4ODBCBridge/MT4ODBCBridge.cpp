@@ -4,7 +4,8 @@
 #include "ODBCWrapper.h"
 
 HINSTANCE g_hInst;
-std::map<const char*, ODBCWrapper*> conns;
+int nextConId = 1;
+std::map<int, ODBCWrapper*> conns;
 
 #define MT4_EXPFUNC __declspec(dllexport)
 
@@ -23,24 +24,26 @@ BOOL APIENTRY DllMain(HINSTANCE hInst, DWORD ul_reason_for_call, LPVOID lpReserv
 	return(TRUE);
 }
 
-MT4_EXPFUNC void __stdcall MOB_create(const char *name)
+MT4_EXPFUNC int __stdcall MOB_create()
 {
 	//TODO: check if non-deleted object
-	conns[name] = new ODBCWrapper(name);
+	int id = nextConId++;
+	conns[id] = new ODBCWrapper(id);
+	return id;
 }
 
-MT4_EXPFUNC void __stdcall MOB_open(const char *name, const char *dns, const char *username, const char *password)
+MT4_EXPFUNC void __stdcall MOB_open(int conId, const char *dns, const char *username, const char *password)
 {
-	conns[name]->open(dns, username, password);
+	conns[conId]->open(dns, username, password);
 }
 
-MT4_EXPFUNC void __stdcall MOB_close(const char *name)
+MT4_EXPFUNC void __stdcall MOB_close(int conId)
 {
 	//TODO: check if the wrapper deletion is needed
-	conns[name]->close();
+	conns[conId]->close();
 }
 
-MT4_EXPFUNC void __stdcall MOB_execute(const char *name, const char *sql)
+MT4_EXPFUNC void __stdcall MOB_execute(int conId, const char *sql)
 {
-	conns[name]->execute(sql);
+	conns[conId]->execute(sql);
 }
