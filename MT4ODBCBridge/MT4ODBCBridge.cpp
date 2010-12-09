@@ -36,9 +36,8 @@ MT4_EXPFUNC void __stdcall MOB_open(const char *name, const char *dns, const cha
 
 MT4_EXPFUNC void __stdcall MOB_close(const char *name)
 {
-	ODBCWrapper *conn = conns[name];
-	conn->close();
-	delete conn;
+	//TODO: check if the wrapper deletion is needed
+	conns[name]->close();
 }
 
 MT4_EXPFUNC void __stdcall MOB_execute(const char *name, const char *sql)

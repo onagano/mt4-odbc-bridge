@@ -12,6 +12,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gsodbc_demo", "gsodbc_demo\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MT4ODBCBridge", "MT4ODBCBridge\MT4ODBCBridge.vcxproj", "{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MT4ODBCBridgeTest", "MT4ODBCBridgeTest\MT4ODBCBridgeTest.vcxproj", "{E6BEC30D-6D84-4C81-82CF-BF92AA588439}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216} = {F0D71ADC-9BB8-48FD-8C13-10D992AAA216}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -34,6 +39,10 @@ Global
 		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}.Debug|Win32.Build.0 = Debug|Win32
 		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}.Release|Win32.ActiveCfg = Release|Win32
 		{F0D71ADC-9BB8-48FD-8C13-10D992AAA216}.Release|Win32.Build.0 = Release|Win32
+		{E6BEC30D-6D84-4C81-82CF-BF92AA588439}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6BEC30D-6D84-4C81-82CF-BF92AA588439}.Debug|Win32.Build.0 = Debug|Win32
+		{E6BEC30D-6D84-4C81-82CF-BF92AA588439}.Release|Win32.ActiveCfg = Release|Win32
+		{E6BEC30D-6D84-4C81-82CF-BF92AA588439}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
