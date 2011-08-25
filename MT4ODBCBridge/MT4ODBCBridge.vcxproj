@@ -63,7 +63,7 @@
       <ModuleDefinitionFile>MT4ODBCBridge.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y "$(TargetPath)" "$(ProgramFiles)\FXDD - MTXtreme 4\experts\libraries"</Command>
+      <Command>copy /y "$(TargetPath)" "$(SolutionDir)\mt4dir\experts\libraries"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
