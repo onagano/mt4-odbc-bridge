@@ -1,6 +1,4 @@
-#+TITLE:     READEME.org
-
-* About MT4-ODBC Bridge
+# About MT4-ODBC Bridge
 
 This is a library for the popular trading terminal, MetaTrader4 (MT4),
 to give access to a relational database through ODBC interface. The
