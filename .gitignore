@@ -1,0 +1,16 @@
+Debug/
+Release/
+ipch/
+MT4DLLs.sdf
+MT4DLLs.opensdf
+MT4DLLs.suo
+ExpertSample/Debug/
+ExpertSample/ExpertSample.vcxproj.user
+ExpertSample/Release/
+MT4ODBCBridge/Debug/
+MT4ODBCBridge/MT4ODBCBridge.vcxproj.user
+MT4ODBCBridge/Release/
+MT4ODBCBridgeTest/Debug/
+MT4ODBCBridgeTest/MT4ODBCBridgeTest.vcxproj.user
+MT4ODBCBridgeTest/Release/
+*~
