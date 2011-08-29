@@ -1,4 +1,5 @@
-#+TITLE:     READEME.org
+#+TITLE: MT4-ODBC Bridge
+#+KEYWORDS: mt4 metatrader odbc rdb rdbms relational database sql historical data export order trade
 
 * About MT4-ODBC Bridge
 
@@ -20,5 +21,5 @@ movement.
 
 MT4-ODBC Bridge (MOB in short) provides a buffer area onto a RDBMS
 like MySQL, PostgreSQL, SQLite, etc. Such database is general enough
-for the most open source programmers. You can access to tha database
+for the most open source programmers. You can access to the database
 by your familiar language, or maybe directly by SQL.
