@@ -387,9 +387,12 @@ string createOrderTableSQL(string tableName) {
    // MySQL has AUTO_INCREMENT option at column definition,
    // but PostgreSQL needs SEQUENCE object...
    string opeIndName = tableName + "_OPEIND";
+   string ordSeqName = tableName + "_SEQ";
    string sql = ""
+      + "drop sequence if exists " + ordSeqName + ";"
+      + "create sequence " + ordSeqName + ";"
       + "create table " + tableName + " ("
-      + "  id integer identity"
+      + "  id bigint default nextval('" + ordSeqName + "') primary key"
       + ", operation integer default 0"
       + ", ticket integer default -1"
       + ", opposite_ticket integer default -1"
